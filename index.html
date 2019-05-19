@@ -11,7 +11,7 @@
 
 </head>
 
-<body style="height:90%;with:100%">
+<body style="height:90%">
   <div style="text-align: center; margin: auto;position: absolute;top: 50%;vertical-align: middle">
   <div id="inspirit6000"></div>
     <span></span>
@@ -24,6 +24,7 @@
   </div>
   <script>    
     var random = Math.round(Math.random( )) ? "Yes" : "No"; 
+    document.body.width=window.innerHeight
     document.getElementById('inspirit6000').innerHTML=random;     
   </script>
 </body>  
