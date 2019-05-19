@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en" style="margin:0px;padding:0px;width:100%"
+<html lang="en" style="margin:0px;padding:0px;width:100%;height:100%"
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -14,9 +14,9 @@
 
 </head>
 
-<body id="bb" style="height:90%;margin:0px;padding:0px;width:100%">
-  <div id="bb" style="margin:0px;padding:0px;width:100%">
-    <div style="text-align: center; margin: auto;position: absolute;top: 50%;vertical-align: middle">
+<body style="margin:0px;padding:0px;width:100%;height:100%">
+  <div id="bb" style="position: relative;margin:0px;padding:0px;top: 50%">
+    <div style="text-align: center; margin: auto;position: relative;top: 50%;vertical-align: middle">
     <div id="inspirit6000"></div>
       <span></span>
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -27,9 +27,11 @@
       </form>
     </div>
   </div>
-  <script>    
+  <script>
     var random = Math.round(Math.random( )) ? "Yes" : "No";
-    document.getElementById('inspirit6000').innerHTML=random;     
+    document.getElementById('bb').style.width=window.innerWidth+"xp";
+    document.getElementById('bb').style.height=window.innerHeight+"xp";
+    document.getElementById('inspirit6000').innerHTML=random;
   </script>
-</body>  
+</body>
 </html>
